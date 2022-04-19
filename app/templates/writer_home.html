@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>LyricBot</title>
+        <title>Netflix-Text-Generator</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -17,66 +17,66 @@
         <!-- JQUERY -->
         <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{ url_for('static',filename='/css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static',filename='/css/styles1.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-              <li class="sidebar-brand"><a href={{ url_for('home')}}>LyricBot Project</a></li>
+              <li class="sidebar-brand"><a href={{ url_for('home')}}>Netflix-Text-Generator</a></li>
               <li class="sidebar-nav-item"><a href={{ url_for('home')}}>Home </a></li>
-              <li class="sidebar-nav-item"><a href={{ url_for('results')}}>Try The Model</a></li>
-              <li class="sidebar-nav-item"><a href="https://www.github.com">Our Github</a></li>
+
+              <li class="sidebar-nav-item"><a href="https://www.github.com/Rajdoshi99/Netflix-generator">Our Github</a></li>
               <li class="sidebar-nav-item"><a href="https://www.ai-camp.org">AI Camp</a></li>
             </ul>
         </nav>
-        <!-- Header-->
-        <header class="masthead d-flex align-items-center">
+        <!--masthead d-flex align-items-center Header-->
+  <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1 text-primary">LyricBot</h1>
-                <h2 class="mb-2 text-primary">'Algorithms and Blues' Edition</h2>
-                <h3 class="mb-5 text-light"><em>All your favorite artists. One AI.</em></h3>
-                <a class="btn btn-primary btn-xl" href={{ url_for('results')}}>Try the Model</a>
+                <h1 style="color:Red" >Netflix-Text-Generator</h1>
+                <h2 style="color:white" >Generate your AI Description</h2>
+                <h3 class="mb-5 text-light"><em> </em></h3>
+                <a class="btn btn-dark btn-xl" href= {{ url_for('results')}}>Try the Model</a>
             </div>
+
         </header>
-        <!-- The Project. Note: https://thesabbir.github.io/simple-line-icons/ will give you a cheat sheet for the icons available-->
-        <section class="content-section bg-primary text-white text-center" id="theproject">
+        <section class="content-section bg-dark bg-gradient text-black text-center" id="theproject">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">Specs + Features</h3>
-                    <h2 class="mb-5">The Project</h2>
+                    <h2 class=" text-white mb-5">The Project</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-music-tone-alt"></i></span>
-                        <h4><strong>Great Music Taste</strong></h4>
-                        <p class="text-faded mb-0">LyricBot is a custom trained GPT-2 model that learned from over 94000 lyrics from the best rock artists of all time.</p>
+                        <h4 class="text-secondary"><strong>Great Music Taste</strong></h4>
+                        <p class="text-faded mb-0">Netflix-Text-Generator is a fine tuned GPT-2 model that learned over 8k Netflix descriptions.</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-playlist"></i></span>
-                        <h4><strong>Interactive</strong></h4>
-                        <p class="text-faded mb-0">LyricBot will write lyrics based off of any prompt you provide it.</p>
+                        <h4 class="text-secondary"><strong>Interactive</strong></h4>
+                        <p class="text-faded mb-0">Netflix-Text-Generator will generate descriptions based off of any specific prompt related to a plot provided.</p>
                     </div>
                     <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-clock"></i></span>
-                        <h4><strong>Timeline</strong></h4>
-                        <p class="text-faded mb-0">LyricBot was completed by teenagers over the course of three weeks this summer!</p>
+                        <h4 class="text-secondary"><strong>Timeline</strong></h4>
+                        <p class="text-faded mb-0">Netflix-Text-Generator was completed in just 9 days along with the development, training and deployment.</p>
                     </div>
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="icon-docs"></i></span>
-                        <h4><strong>Extensions</strong></h4>
-                        <p class="text-faded mb-0">Some extensions to this project include deploying it to the web, building a discord bot, or having the algorithms and blues LyricBot interact with new genres!</p>
+                        <h4 class="text-secondary"><strong>Extensions</strong></h4>
+                        <p class="text-faded colmb-6">Some extensions to this project include generate new sentences based on genre, director, year. Further training on Big-data could improve performance!</p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Team-->
-        <section class="content-section" id="aboutus">
+        <section class="content-section bg-black" id="aboutus">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">About Us</h3>
-                    <h2 class="mb-5">The Team</h2>
+                    <h2 class=" text-white mb-5">AI CAMP TEAM</h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
@@ -131,9 +131,9 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h1">Cydnee Harris</div>
-                                    <div class="h2">Quality Control</div>
-                                    <p class="mb-0">A thorough quality controller who loves Natural Language Processing!</p>
+                                    <div class="h1">Mitchell Cutts</div>
+                                    <div class="h2">Developer</div>
+                                    <p class="mb-0">Passionate leader with a background in computer science, mathematics, and data science!</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="{{ url_for('static',filename='img/portfolio-4.jpg') }}" alt="..." />
@@ -143,11 +143,12 @@
                         <a class="portfolio-item" href="#!">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h1">Stella Dong</div>
-                                    <div class="h2">Front End Engineer</div>
-                                    <p class="mb-0">An html enthusiast who loves Natural Language Processing!</p>
+                                    <div class="h1">Raj Doshi</div>
+                                    <div class="h2">Developer</div>
+                                    <p class="mb-0">Data science Enthusiast who loves Natural Language processing!</p>
                                 </div>
                             </div>
+                          
                             <img class="img-fluid" src="{{ url_for('static',filename='img/portfolio-1.jpg') }}" alt="..." />
                         </a>
                     </div>
@@ -155,24 +156,24 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer text-center">
+        <footer class=" bg-black footer text-center">
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/aicampdotorg/"><i class="icon-social-facebook"></i></a>
+                        <a class="social-link rounded-circle bg-danger text-white mr-3" href="https://www.facebook.com/aicampdotorg/"><i class="icon-social-facebook"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/AICampOfficial"><i class="icon-social-twitter"></i></a>
+                        <a class="social-link rounded-circle bg-danger text-white mr-3" href="https://twitter.com/AICampOfficial"><i class="icon-social-twitter"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
+                        <a class="social-link rounded-circle bg-danger text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; LyricBot AI Camp Team (mitch cutts) 2022 </p>
+                <p class="text-white small mb-0">Netflix-Text-Generator - Raj Doshi</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <a class="bg-danger scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- TEXTGEN JS-->
         <script type="text/javascript" src="{{ url_for('static', filename='js/text_gen.js') }}" defer=""></script>
         <!-- Bootstrap core JS-->
@@ -180,4 +181,5 @@
         <!-- Core theme JS-->
         <script src="{{ url_for('static',filename='js/scripts.js') }}"></script>
     </body>
+
 </html>
