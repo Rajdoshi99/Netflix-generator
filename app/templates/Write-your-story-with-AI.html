@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Lyric Bot</title>
+        <title>NETFLIX-GENERATOR</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="static/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
@@ -17,17 +17,17 @@
         <!-- JQUERY -->
         <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='jquery.js') }}" defer=""></script>
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static',filename='css/styles1.css') }}" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
+        <a class="bg-black menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
-              <li class="sidebar-brand"><a href={{ url_for('home')}}>LyricBot Project</a></li>
+              <li class="sidebar-brand"><a href={{ url_for('home')}}>Netflix-Text-Generator</a></li>
               <li class="sidebar-nav-item"><a href={{ url_for('home')}}>Home </a></li>
               <li class="sidebar-nav-item"><a href={{ url_for('results')}}>Try The Model</a></li>
-              <li class="sidebar-nav-item"><a href="https://www.github.com">Our Github</a></li>
+              <li class="sidebar-nav-item"><a href="https://www.github.com/Rajdoshi99/Netflix-generator">Our Github</a></li>
               <li class="sidebar-nav-item"><a href="https://www.ai-camp.org">AI Camp</a></li>
             </ul>
         </nav>
@@ -36,54 +36,67 @@
             <div class="container px-4 px-lg-5 text-center">
                 <br>
                 <br>
-                <h1 class="mb-1 text-primary">THE MODEL</h1>
-                <h3 class="mb-5 text-dark"><em>LyricBot 'Algorithms and Blues Edition' awaits you below.</em></h3>
+                <h1 class="text-black">NETFLIX-TEXT-GENERATOR</h1>
+                <h3 class="mb-5 text-black"><em>Generate your new-lines based on Netflix descriptions</em></h3>
             </div>
         </header>
         <!-- About-->
-        <section class="content-section bg-primary" id="trythemodel">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-5">
-                        <h2 class="text-light">Test out our model here!</h2>
-                        <p class="lead mb-5"><strong>Submit a prompt for LyricBot to work with below, and the results will appear on the right!</strong></p>
-                        <form action="{{url_for('generate_text')}}" method="POST" source="custom" name="form-1" >
-                          <div class="form-group">
-                            <textarea class="form-control-lg" rows="4" cols="50" placeholder="Write your prompt here..." required="" id="text_gen_input" name="prompt"></textarea>
-                          </div>
-                          <div class="form-group">
-                            <button type="submit" class="btn btn-light" id="text_gen_button">Generate</button>
-                          </div>
-                        </form>
-                        <br>
-                    </div>
-                    <div class="col-lg-5">
-                      <h2 class="text-light">Results:</h2>
-                      <ul id="generated_ul">
-                      <p>
-                        {{ generated }}
-                        </p>
-                      <!-- generated items will be here. -->
-                      </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
+ <html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NETFLIX TEXT GENERATOR</title>
+</head>
+<body>
+
+<style>
+body {
+  background-image: url("https://i.stack.imgur.com/LR5ab.png");
+  
+}
+
+</style>
+
+	<h1><center style=" color: black;font-size:40px;" ><center></h1>
+<form method="POST">
+  <div style = "position:relative; left:10px; top:2px; font-size:20px" >
+<h2 style="color: Black;  font-size:25px">WRITE YOUR TEXT HERE</h2>
+    <textarea placeholder="Write few words here..." name="text" style="height: 100px;width: 500px"></textarea>
+    <br>
+    <input type="submit" style="font-size:15px;color:white;background:black", name="PREDICT">
+</form>
+  <h3 style="color:black "> YOUR AI GENERATED INPUTS WILL BE GENERATED HERE</h3>
+  <h4>
+{% for para in processed_text %}
+<p id="text" style="color: black;font-size:20px">{{ para }}</p>
+{% endfor %}
+    </h4>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <br>
+    <br>
+    <br>
+    
         <!-- Footer-->
         <footer class="footer text-center">
-            <div class="container px-4 px-lg-5">
+            <div  class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/aicampdotorg/"><i class="icon-social-facebook"></i></a>
+
+                        <a class="social-link rounded-circle bg-dark text-white mr-3" href="https://www.facebook.com/aicampdotorg/"><i class="icon-social-facebook"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/AICampOfficial"><i class="icon-social-twitter"></i></a>
+                        <a class="social-link rounded-circle bg-dark text-white mr-3" href="https://twitter.com/AICampOfficial"><i class="icon-social-twitter"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
+                        <a class="social-link rounded-circle bg-dark text-white" href="https://github.com/minimaxir/aitextgen"><i class="icon-social-github"></i></a>
                     </li>
                 </ul>
-                <p class="text-muted small mb-0">Copyright &copy; LyricBot AI Camp Team (mitch cutts) 2022 </p>
+                <p class="text-dark small mb-0">Netflix-Text-Generator using Aitextgen - Raj Doshi </p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
