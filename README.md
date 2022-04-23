@@ -23,3 +23,4 @@ The BLEU (BiLingual Evaluation Understudy) score will be used for evaluation of 
 
 **OUTPUT:-**
 
+![noob](https://user-images.githubusercontent.com/44093439/164945343-a63d4328-235d-419d-9e4e-041eb8b776c5.jpg)
