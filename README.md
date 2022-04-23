@@ -7,6 +7,17 @@ Given a keyword or a prompt, a pre-trained GPT-2 model is fine-tuned to generate
 The model is trained on the Netflix dataset obtained from Kaggle. The dataset contains approximately 8000 movies and television series that are available on their site. This tabular dataset contains lists of all the movies and TV series accessible on Netflix, together with information such as actors, directors, ratings, release year, duration,etc.
 Link- https://www.kaggle.com/datasets/shivamb/netflix-shows
 
+How to Run
+git clone this repository and cd in to app directory.
+
+Download dependencies with python3 -m pip install -r requirements.txt.
+
+Move your model files into app/model folder. (Here is a copy of my tuned model)
+
+Change line 106 of app/main.py, the value of website_url to localhost.
+
+Run app with python3 -m main and follow instruction on the terminal.
+
 **Advanced Features:**
 
 The Advanced features of the model could be based on the director or year, our model could generate descriptions of various shows or movies, etc. For example , prompt(
@@ -23,4 +34,5 @@ The BLEU (BiLingual Evaluation Understudy) score will be used for evaluation of 
 
 **OUTPUT:-**
 
-![noob](https://user-images.githubusercontent.com/44093439/164945343-a63d4328-235d-419d-9e4e-041eb8b776c5.jpg)
+
+
